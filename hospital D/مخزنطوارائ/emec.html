@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--===========style,css==========-->
+<link rel="stylesheet" href="emec.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>فرعي طوارائ</title>
+</head>
+<body>
+    
+<div class="emec">
+    <a href="../index.html"class="home"><i class="fa-solid fa-home"></i></a>
+    <div class="head">
+        <h2>مخزن فرعي طوارائ 
+        </h2>
+        
+    </div>
+    <div class="inputs">
+        <input type="text" id="title" placeholder="...اسم المنتج هنا">
+     <div class="total">
+       <input onkeyup="caltotal()"  type="number" id="price" placeholder="السعر">
+       <input onkeyup="caltotal()"  type="number" id="tax" placeholder="الضريبة">
+       <small id="total">0</small>
+     </div>
+     <input type="number" id="count" placeholder="...ادخل الكمية">
+     
+     <button id="build">create</button>
+    </div>
+<div class="outputs">
+ <div class="search">
+    <input  type="text" onkeyup="searchi(this.value)" id="search" placeholder="search here...">
+    <div class="search-btn">
+        <button  id="bytitle">ابحث بواسطة اسم المنتج</button>
+        
+    </div>
+ </div>
+ <div id="deleteall"></div>
+ <table>
+     <tbody>
+        <tr>
+            <th>رقم التعريف</th>
+            <th>اسم المنتج</th>
+            <th>السعر</th>
+            <th>الضريبة</th>
+            <th>الاجمالي</th>
+            <th>تحديث</th>
+            <th>مسح</th>
+        </tr>
+     </tbody>
+     <tbody id="tbody">
+     
+     </tbody>
+  
+ </table>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <!--================main.js============-->
+    <script src="emec.js"></script>
+</body>
+</html>

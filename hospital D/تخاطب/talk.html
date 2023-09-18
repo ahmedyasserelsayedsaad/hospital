@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--===============css==========-->
+    <link rel="stylesheet" href="talk.css">
+    <!--===========font asowem=====-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>talking clinic</title>
+</head>
+<body>
+    <div class="talk">
+        <a href="../index.html"class="home"><i class="fa-solid fa-home"></i></a>
+        <div class="head">
+            <h2 > عيادة التخاطب</h2>
+            <h4>اهلا بك فى مستشفى دنديط الخيري</h4>
+        </div>
+        <div class="inputs">
+            <input type="text" id="tag" placeholder="ادخل اسم الطبيب ...">
+            <input type="number" id="esaal" placeholder="ادخل رقم الايصال ">
+            <input type="number" id="price" placeholder="ادخل سعر الكشف ">
+            <input type="text" id="pat" placeholder="ادخل اسم المريض">
+            <input type="number" id="out" placeholder="ادخل رقم المصروف">
+            <input type="number" id="uuu" placeholder="...ادخل الكمية">
+            <input type="number" id="aaa" placeholder="...الحساب الكلي">
+         <div class="total">
+          <!--     <input onkeyup="mdate()"  type="number" id="day" placeholder="اليوم">
+           <input onkeyup="mdate()"  type="number" id="month" placeholder="الشهر">
+           <input onkeyup="mdate()"  type="number" id="year" placeholder="السنة">
+           <small id="date">0/0/0</small>
+         </div>-->
+         <input type="text" id="try" placeholder="ggggg">
+         <input type="number" id="count" placeholder="...ادخل الكمية">
+         <button id="build">create</button>
+         <button id="cal" onclick="calinf(this.i)">cal</button>
+        </div>
+        <div class="outputs">
+            <div class="search">
+               <input type="text" onkeyup="searchh(this.value)" id="search" placeholder="ابحث هنا...">
+               <div class="search-btn">
+                   <button  id="bytitle">بحث باستخدام اسم الطبيب</button>
+                   
+               </div>
+            </div>
+            <div id="deleteall"></div>
+            <table>
+                <tbody>
+                   <tr>
+                       <th>رقم التعريف</th>
+                       <th>اسم الطبيب</th>
+                       <th>اسم المريض</th>
+                       <th>سعر الكشف</th>
+                       <th>المصروف</th>
+                       <th style="background-color: #6370FF;">(صافي السعر)</th>
+                       <th>رقم الايصال</th>
+                       <th>التاريخ</th>
+                       <th>مسح</th>
+                       <th>تحديث</th>
+                   </tr>
+                </tbody>
+                <tbody id="tbody">
+                   <tr>
+                       <td>0</td>
+                       <td>oppo</td>
+                       <td>oppo</td>
+                       <td>200</td>
+                       <td>200</td>
+                       <td>(uuu)</td>
+                       <td>200</td>
+                       <td>200</td>
+                       <td><button> update</button></td>
+                       <td><button>delete</button></td>
+                   </tr>
+                </tbody>
+             
+            </table>
+           </div>
+    </div>
+    <!--===========js===============-->
+  <script src="talk.js"></script>
+</body>
+</html>
